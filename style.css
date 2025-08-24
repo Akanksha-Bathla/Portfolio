@@ -7,13 +7,26 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 body {
     background-color: #080808;
     color: #fff;
+    font-family: 'Courier New', monospace;
+    height: 100vh;
+}
+
+#typewriter {
+    border-right: 2px solid #38bdf8;
+    white-space: nowrap;
+    overflow: hidden;
+    min-height: 2.5rem;
+    /* reserve height */
+    width: 12ch;
+    /* reserve width for longest text (e.g., "MEAN Stack") */
+    text-align: center;
 }
 
 #header {
@@ -449,7 +462,7 @@ nav .fa {
     }
 }
 
-#msg{
+#msg {
     color: #61b752;
     margin-top: -40px;
     display: block;
